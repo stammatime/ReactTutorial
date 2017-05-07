@@ -5,7 +5,7 @@ class SearchBar extends Component {
     //gives access to all functionality that React.Component class has
     constructor(props){
         super(props);
-        this.state = {term: 'starting value'};
+        this.state = {term: ''};
     }
 
 
