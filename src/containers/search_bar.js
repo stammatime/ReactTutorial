@@ -12,7 +12,6 @@ class SearchBar extends Component {
     }
 
     onInputChange(event){
-        console.log(event.target.value);
         this.setState({term: event.target.value})
     }
 
@@ -41,7 +40,6 @@ class SearchBar extends Component {
 }
 
 function mapDispatchToProps(dispatch){
-    console.log("mapdispatchtoprops");
     return bindActionCreators({fetchWeather}, dispatch)
 }
 //gives access to this.props.fetchWeather;
