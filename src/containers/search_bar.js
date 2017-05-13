@@ -21,7 +21,6 @@ class SearchBar extends Component {
         //go fetch weather data
         this.props.fetchWeather(this.state.term);
         this.setState({term: ''});
-        
     }
 
     render(){
@@ -42,6 +41,7 @@ class SearchBar extends Component {
 }
 
 function mapDispatchToProps(dispatch){
+    console.log("mapdispatchtoprops");
     return bindActionCreators({fetchWeather}, dispatch)
 }
 //gives access to this.props.fetchWeather;
